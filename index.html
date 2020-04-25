@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Name Guessing Game</h1>
+            <h2>Start by typing a letter!</h2>
+        </header>
+
+        <div class="card">
+            <h3 class="title">Guess Word</h3>
+            <div class="blanks-area padding-style">
+                <h3 id="word-blanks">-------</h3>
+            </div>
+            <div class="wrong-guess-area padding-style">
+                <h3>Wrong Guesses: </h3> <span id="wrong-guesses"></span>
+            </div>     
+            <div class="guesses-left-area padding-style">
+                <h3>Guesses: </h3> <span id="guesses-left">9</span>
+            </div>
+            <div class="wins-area padding-style">
+                <h3>Wins: </h3> <span id="wins">0</span>
+            </div>
+            <div class="losses-area padding-style">
+                <h3>Losses: </h3> <span id="losses">0</span>
+            </div>
+        </div>
+    </div>
+    <script src="./gameLogic.js"></script>
+</body>
+</html>
